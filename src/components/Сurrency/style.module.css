@@ -1,0 +1,18 @@
+.currency_box{
+	width: 25%;
+	display: flex;
+	border: 1px solid black;
+	padding: 0 8px;
+}
+.currency_box{
+	justify-content: space-between;
+}
+.currency_box :last-child{
+	color: rgb(46, 21, 21);
+	font-weight: 700;
+}
+.currency{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}

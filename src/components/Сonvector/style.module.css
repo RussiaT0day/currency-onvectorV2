@@ -1,0 +1,37 @@
+
+.title{
+	text-align: center;
+}
+.boxConvert{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.country{
+	margin-right: 10px;
+}
+.country select{
+	font-size: 14px;
+	margin-right: 5px;
+	padding: 2px;
+}
+.text p{
+	font-size: 14px;
+	line-height: 0;
+	margin-right: 5px;
+}
+.count{
+	display: flex;
+	margin-right: 5px;
+}
+.count input{
+	padding: 2px;
+	width: 60px;
+	text-align: center;
+	font-size: 14px;
+}
+
+
+.result{
+	font-weight: 700;
+}

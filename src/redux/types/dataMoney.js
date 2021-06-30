@@ -1,0 +1,4 @@
+export const GET_DATAMONEY = 'GET_DATAMONEY';
+export const SEARCH_DATAMONEY = 'SEARCH_DATAMONEY';
+
+

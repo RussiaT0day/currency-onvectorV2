@@ -1,0 +1,75 @@
+.header{
+	background: black;
+	padding: 10px 0;
+}
+.header nav ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+}
+
+.header nav ul li{
+	list-style: none;
+	margin-right: 5px;
+}
+
+
+.header nav ul li a{
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	transition: .3s all;
+}
+
+.header nav ul li a:hover{
+	color: brown;
+}
+
+
+
+.main-valute-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 50%;
+	margin: 0 auto 10px auto;
+	border: 1px solid black;
+	border-radius: 3px;
+	padding: 5px 10px;
+	background: #f2f2f2;
+	transition: .3s all;
+}
+.main-valute-container:hover{
+	background: #e2e2e2;
+}
+
+.main-valute-container-name {
+	width: 70%;
+}
+.main-valute-container-price{
+	align-items: stretch;
+}
+
+
+
+
+.main-valute-container-add
+{
+	background-color: #3775dd;
+	box-shadow: 0 2px #21487f;
+}
+.main-valute-container-add:hover {
+	background-color: #002fed;
+}
+.main-valute-container-add:active {
+	background-color: #2f599e !important;
+}
+.main-valute-container-add:focus-visible {
+	box-shadow: 0 0 0 3px lightskyblue;
+}
+.main-valute-container-add:disabled {
+	background-color: #6c87b5;
+}
