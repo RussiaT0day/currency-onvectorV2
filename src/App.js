@@ -18,10 +18,8 @@ import Сonvector from './components/Сonvector/Сonvector'
 import Сurrency from './components/Сurrency/Сurrency'
 import Header from './components/Header/Header'
 function App() {
-  // const store = createStore(rootReducer, initialState);
 
   return (
-    // <Provider store={store}>
       <Router>
         <Header />
         <Switch>
@@ -34,7 +32,6 @@ function App() {
 
         </Switch>
       </Router >
-    /* </Provider> */
   );
 }
 

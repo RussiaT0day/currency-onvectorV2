@@ -18,7 +18,6 @@ const searchDataMoney = (word) => {
 const getDataMoneyThunk = () => async (dispatch) => {
     const money = await axios("https://www.cbr-xml-daily.ru/daily_json.js");
     let data = money.data.Valute
-    console.log(data)
     dispatch(getDataMoney(data))
 }
 

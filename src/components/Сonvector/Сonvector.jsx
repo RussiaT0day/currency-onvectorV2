@@ -14,7 +14,6 @@ export default function Сonvector() {
 
 
 	let initialValue = Object.values(dataMoney)[0]
-	// console.log(initialValue.Value);	
 	const dispatch = useDispatch()
 	useEffect(() => {
 		dispatch(getDataMoneyThunk())
@@ -25,35 +24,32 @@ export default function Сonvector() {
 	}
 
 	return (
-		<div>
+		<div className={style.convert}>
 			<div className={style.title}>
 				<h2>Конвектор</h2>
 			</div>
 
-			<div className={style.boxConvert}>
-
-				<div className={`${style.count} `}>
-					<input className="form-control" onChange={e => setCount(e.target.value)} value={count} type="number" min='1' step='1' />
-				</div>
-				<div> ед </div>
-				<div className={style.text}>
-
-				</div>
-				<div className={`${style.country} mr-5`}>
+			<div className={style.box_convert}>
+				<div className={style.country}>
 					<select className="form-select form-select-sm " aria-label=".form-select-sm example" onChange={e => setSelectValue(e.target.value)} value={selectValue}  >
 						<option></option>
 						{Object.values(dataMoney).map((el, i) => {
-							// if(i===0)setSelectValue(el.Value);
 							return <option value={el.Value}>{el.Name}</option>
 						})
 						}
 					</select>
 				</div>
-				<div className='mr-5'>
-					<button className="btn btn-primary btn-sm" onClick={() => resultСalculate()}>посчиать</button>
-				</div>
-				<div className={`${style.result} `}>
-					= {result} ₽
+				<div className={style.row}>
+					<div className={`${style.count} `}>
+						<input className="form-control" onChange={e => setCount(e.target.value)} value={count} type="number" min='1' step='1' />
+						<div> ед </div>
+					</div>
+					<div>
+						<button className="btn btn-primary btn-sm" onClick={() => resultСalculate()}>посчиать</button>
+					</div>
+					<div className={`${style.result} `}>
+						= {result} ₽
+					</div>
 				</div>
 			</div>
 
